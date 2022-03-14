@@ -19,7 +19,7 @@
 		BCB8344827DF887500D43F49 /* SecondChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344727DF887500D43F49 /* SecondChildViewController.swift */; };
 		BCB8344A27DF8A7400D43F49 /* FirstChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */; };
 		BCB8344C27DFBD0400D43F49 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344B27DFBD0400D43F49 /* K.swift */; };
-		BCB8344E27DFE29B00D43F49 /* ChildManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344D27DFE29B00D43F49 /* ChildManager.swift */; };
+		BCB8344E27DFE29B00D43F49 /* ChildVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344D27DFE29B00D43F49 /* ChildVCModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		BCB8344727DF887500D43F49 /* SecondChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondChildViewController.swift; sourceTree = "<group>"; };
 		BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChildViewController.swift; sourceTree = "<group>"; };
 		BCB8344B27DFBD0400D43F49 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
-		BCB8344D27DFE29B00D43F49 /* ChildManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildManager.swift; sourceTree = "<group>"; };
+		BCB8344D27DFE29B00D43F49 /* ChildVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildVCModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +109,9 @@
 			children = (
 				BCB8341727DF86DC00D43F49 /* AppDelegate.swift */,
 				BCB8341927DF86DC00D43F49 /* SceneDelegate.swift */,
-				BCB8341B27DF86DC00D43F49 /* ViewController.swift */,
-				BCB8344B27DFBD0400D43F49 /* K.swift */,
-				BCB8344727DF887500D43F49 /* SecondChildViewController.swift */,
-				BCB8344D27DFE29B00D43F49 /* ChildManager.swift */,
-				BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */,
-				BCB8341D27DF86DC00D43F49 /* Main.storyboard */,
+				BCB8345127DFEDD500D43F49 /* Models */,
+				BCB8345027DFEDC800D43F49 /* Views */,
+				BCB8344F27DFEDAE00D43F49 /* Controllers */,
 				BCB8342027DF86DD00D43F49 /* Assets.xcassets */,
 				BCB8342227DF86DD00D43F49 /* LaunchScreen.storyboard */,
 				BCB8342527DF86DD00D43F49 /* Info.plist */,
@@ -137,6 +134,33 @@
 				BCB8343A27DF86DE00D43F49 /* myChildControllerUITestsLaunchTests.swift */,
 			);
 			path = myChildControllerUITests;
+			sourceTree = "<group>";
+		};
+		BCB8344F27DFEDAE00D43F49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8341B27DF86DC00D43F49 /* ViewController.swift */,
+				BCB8344727DF887500D43F49 /* SecondChildViewController.swift */,
+				BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BCB8345027DFEDC800D43F49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8341D27DF86DC00D43F49 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCB8345127DFEDD500D43F49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8344B27DFBD0400D43F49 /* K.swift */,
+				BCB8344D27DFE29B00D43F49 /* ChildVCModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +297,7 @@
 				BCB8344A27DF8A7400D43F49 /* FirstChildViewController.swift in Sources */,
 				BCB8341C27DF86DC00D43F49 /* ViewController.swift in Sources */,
 				BCB8344827DF887500D43F49 /* SecondChildViewController.swift in Sources */,
-				BCB8344E27DFE29B00D43F49 /* ChildManager.swift in Sources */,
+				BCB8344E27DFE29B00D43F49 /* ChildVCModel.swift in Sources */,
 				BCB8344C27DFBD0400D43F49 /* K.swift in Sources */,
 				BCB8341827DF86DC00D43F49 /* AppDelegate.swift in Sources */,
 				BCB8341A27DF86DC00D43F49 /* SceneDelegate.swift in Sources */,
