@@ -19,6 +19,7 @@
 		BCB8344827DF887500D43F49 /* SecondChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344727DF887500D43F49 /* SecondChildViewController.swift */; };
 		BCB8344A27DF8A7400D43F49 /* FirstChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */; };
 		BCB8344C27DFBD0400D43F49 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344B27DFBD0400D43F49 /* K.swift */; };
+		BCB8344E27DFE29B00D43F49 /* ChildManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344D27DFE29B00D43F49 /* ChildManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BCB8344727DF887500D43F49 /* SecondChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondChildViewController.swift; sourceTree = "<group>"; };
 		BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChildViewController.swift; sourceTree = "<group>"; };
 		BCB8344B27DFBD0400D43F49 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		BCB8344D27DFE29B00D43F49 /* ChildManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				BCB8341B27DF86DC00D43F49 /* ViewController.swift */,
 				BCB8344B27DFBD0400D43F49 /* K.swift */,
 				BCB8344727DF887500D43F49 /* SecondChildViewController.swift */,
+				BCB8344D27DFE29B00D43F49 /* ChildManager.swift */,
 				BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */,
 				BCB8341D27DF86DC00D43F49 /* Main.storyboard */,
 				BCB8342027DF86DD00D43F49 /* Assets.xcassets */,
@@ -270,6 +273,7 @@
 				BCB8344A27DF8A7400D43F49 /* FirstChildViewController.swift in Sources */,
 				BCB8341C27DF86DC00D43F49 /* ViewController.swift in Sources */,
 				BCB8344827DF887500D43F49 /* SecondChildViewController.swift in Sources */,
+				BCB8344E27DFE29B00D43F49 /* ChildManager.swift in Sources */,
 				BCB8344C27DFBD0400D43F49 /* K.swift in Sources */,
 				BCB8341827DF86DC00D43F49 /* AppDelegate.swift in Sources */,
 				BCB8341A27DF86DC00D43F49 /* SceneDelegate.swift in Sources */,
