@@ -14,7 +14,7 @@ class FirstChildViewController: UIViewController {
         textLabel.text = "russian warship, go fuck yourself"
         textLabel.textColor = .systemYellow
         textLabel.textAlignment = .center
-        textLabel.font = .systemFont(ofSize: 14, weight: .bold)
+        textLabel.font = .systemFont(ofSize: 16, weight: .bold)
         return textLabel
     }()
 

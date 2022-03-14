@@ -14,7 +14,7 @@ class SecondChildViewController: UIViewController {
         textLabel.text = "Glory to Ukraine!"
         textLabel.textColor = .systemBlue
         textLabel.textAlignment = .center
-        textLabel.font = .systemFont(ofSize: 28, weight: .bold)
+        textLabel.font = .systemFont(ofSize: 30, weight: .bold)
         return textLabel
     }()
 

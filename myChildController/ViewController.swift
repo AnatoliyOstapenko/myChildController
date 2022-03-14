@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    var childManager = ChildManager()
     let secondChildVC = SecondChildViewController()
     
     let firstChildVC: FirstChildViewController = {
@@ -26,16 +26,9 @@ class ViewController: UIViewController {
         addChild(vc)
         view.addSubview(vc.view)
         vc.didMove(toParent: self) // move second VC to default VC
-        childVCConstraints(vc)
+        childManager.childVCConstraints(vc, self)
     }
-    // add contraints for ChildVC
-    func childVCConstraints(_ vc: UIViewController) {
-        vc.view.translatesAutoresizingMaskIntoConstraints = false
-        vc.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -220).isActive = true
-        vc.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        vc.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        vc.view.heightAnchor.constraint(equalToConstant: 200).isActive = true
-    }
+    
     
     
     @IBAction func chooseVCsegmentControlSelected(_ sender: UISegmentedControl) {
