@@ -11,10 +11,11 @@ class FirstChildViewController: UIViewController {
     
     let textLabel: UILabel = {
         let textLabel = UILabel()
+        textLabel.translatesAutoresizingMaskIntoConstraints = false
         textLabel.text = "russian warship, go fuck yourself"
         textLabel.textColor = .systemYellow
         textLabel.textAlignment = .center
-        textLabel.font = .systemFont(ofSize: 16, weight: .bold)
+        textLabel.font = .systemFont(ofSize: 20, weight: .bold)
         return textLabel
     }()
 
@@ -26,7 +27,8 @@ class FirstChildViewController: UIViewController {
     }
     
     func labelConstraints() {
-        textLabel.frame = CGRect(x: 30, y: 50, width: 280, height: 80)
+        textLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        textLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 
 }

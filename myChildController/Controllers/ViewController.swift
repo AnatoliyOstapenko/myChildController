@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var childVCModel = ChildVCModel()
-    var popModel = PopUpModel()
+    
     
     let secondChildVC = SecondChildViewController()
     let firstChildVC: FirstChildViewController = {
@@ -21,7 +21,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(popModel)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+            let popModel = PopUpModel()
+            self.view.addSubview(popModel)
+        }
+    
     }
 
     @IBAction func chooseVCsegmentControlSelected(_ sender: UISegmentedControl) {

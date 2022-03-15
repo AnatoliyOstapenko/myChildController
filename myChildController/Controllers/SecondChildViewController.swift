@@ -11,6 +11,7 @@ class SecondChildViewController: UIViewController {
     
     let textLabel: UILabel = {
         let textLabel = UILabel()
+        textLabel.translatesAutoresizingMaskIntoConstraints = false
         textLabel.text = "Glory to Ukraine!"
         textLabel.textColor = .systemBlue
         textLabel.textAlignment = .center
@@ -26,7 +27,8 @@ class SecondChildViewController: UIViewController {
     }
     
     func labelConstraints() {
-        textLabel.frame = CGRect(x: 30, y: 50, width: 260, height: 80)
+        textLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        textLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
 
