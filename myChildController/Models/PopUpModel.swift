@@ -9,6 +9,8 @@ import UIKit
 
 class PopUpModel: UIView {
     
+    var animation = Animation()
+    
     private let titleLable: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -48,7 +50,7 @@ class PopUpModel: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        // Activate tap gesture to
+        // Activate tap gesture
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateOut)))
         
         self.backgroundColor = .systemGray.withAlphaComponent(0.4) // set alpfa
@@ -66,8 +68,8 @@ class PopUpModel: UIView {
         popUpStack.heightAnchor.constraint(equalTo: popUpContainer.heightAnchor, multiplier: 0.5).isActive = true
         popUpStack.centerYAnchor.constraint(equalTo: popUpContainer.centerYAnchor).isActive = true
         
-        animateIn() // activate popUp in method
-        
+        //animateIn() // activate popUp in method
+        animation.animateIn(container: popUpContainer, view: self)
     }
     
     required init?(coder: NSCoder) {
@@ -77,7 +79,7 @@ class PopUpModel: UIView {
 }
 // MARK: - Animation Method
 extension PopUpModel {
-    
+
     @objc private func animateOut() {
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
             self.popUpContainer.transform = CGAffineTransform(translationX: 0, y: -self.frame.height)
@@ -85,13 +87,5 @@ extension PopUpModel {
             self.removeFromSuperview()
         }
     }
-    
-    @objc private func animateIn() {
-        self.popUpContainer.transform = CGAffineTransform(translationX: 0, y: -self.frame.height)
-        self.alpha = 0
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
-            self.popUpContainer.transform = .identity
-            self.alpha = 1
-        }
-    }
+
 }

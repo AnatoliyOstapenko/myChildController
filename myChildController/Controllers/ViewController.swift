@@ -11,7 +11,6 @@ class ViewController: UIViewController {
     
     var childVCModel = ChildVCModel()
     
-    
     let secondChildVC = SecondChildViewController()
     let firstChildVC: FirstChildViewController = {
         let firstChildVC = FirstChildViewController()
@@ -22,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // it's mandatory to animate pop-up view
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
             let popModel = PopUpModel()
             self.view.addSubview(popModel)
