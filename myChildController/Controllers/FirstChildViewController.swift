@@ -22,9 +22,9 @@ class FirstChildViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(textLabel)
         labelConstraints()
-
         view.backgroundColor = .systemBlue
     }
+    
     func labelConstraints() {
         textLabel.frame = CGRect(x: 30, y: 50, width: 280, height: 80)
     }
