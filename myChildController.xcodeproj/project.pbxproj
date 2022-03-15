@@ -20,6 +20,7 @@
 		BCB8344A27DF8A7400D43F49 /* FirstChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */; };
 		BCB8344C27DFBD0400D43F49 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344B27DFBD0400D43F49 /* K.swift */; };
 		BCB8344E27DFE29B00D43F49 /* ChildVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8344D27DFE29B00D43F49 /* ChildVCModel.swift */; };
+		BCB8345527E0A0C500D43F49 /* PopUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8345427E0A0C500D43F49 /* PopUpModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChildViewController.swift; sourceTree = "<group>"; };
 		BCB8344B27DFBD0400D43F49 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		BCB8344D27DFE29B00D43F49 /* ChildVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildVCModel.swift; sourceTree = "<group>"; };
+		BCB8345427E0A0C500D43F49 /* PopUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				BCB8344B27DFBD0400D43F49 /* K.swift */,
 				BCB8344D27DFE29B00D43F49 /* ChildVCModel.swift */,
+				BCB8345427E0A0C500D43F49 /* PopUpModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB8345527E0A0C500D43F49 /* PopUpModel.swift in Sources */,
 				BCB8344A27DF8A7400D43F49 /* FirstChildViewController.swift in Sources */,
 				BCB8341C27DF86DC00D43F49 /* ViewController.swift in Sources */,
 				BCB8344827DF887500D43F49 /* SecondChildViewController.swift in Sources */,
