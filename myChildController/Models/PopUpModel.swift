@@ -55,6 +55,7 @@ class PopUpModel: UIView {
         
         self.backgroundColor = .systemBlue.withAlphaComponent(0.3) // set alpfa
         self.frame = UIScreen.main.bounds
+        
         addSubview(popUpContainer) // always before constraints!
         
         popUpContainer.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
@@ -63,6 +64,7 @@ class PopUpModel: UIView {
         popUpContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.25).isActive = true
         
         popUpContainer.addSubview(popUpStack) // add UIStackView to my container view
+        
         popUpStack.leadingAnchor.constraint(equalTo: popUpContainer.leadingAnchor).isActive = true
         popUpStack.trailingAnchor.constraint(equalTo: popUpContainer.trailingAnchor).isActive = true
         popUpStack.heightAnchor.constraint(equalTo: popUpContainer.heightAnchor, multiplier: 0.5).isActive = true
