@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE YOUR MOTTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN3-66-O3X">
-                                <rect key="frame" x="20" y="408" width="374" height="80"/>
+                                <rect key="frame" x="20" y="208" width="374" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="VLb-Dw-S8S"/>
                                 </constraints>
@@ -32,11 +32,17 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IN3-66-O3X" secondAttribute="trailing" constant="20" id="Gqe-fO-zjb"/>
                             <constraint firstItem="IN3-66-O3X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KpG-cX-CDO"/>
                             <constraint firstItem="IN3-66-O3X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dIw-b9-Xfq"/>
-                            <constraint firstItem="IN3-66-O3X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="soJ-ut-2XU"/>
+                            <constraint firstItem="IN3-66-O3X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="soJ-ut-2XU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rTg-CH-lFo">
                         <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="PopUp" id="vJR-VN-rKm">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="showPopUpButtonPressed:" destination="BYZ-38-t0r" id="PBL-pq-cLl"/>
+                            </connections>
+                        </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" id="she-EG-N6p">
                             <rect key="frame" x="141.5" y="5.5" width="131" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,6 +54,12 @@
                                 <action selector="chooseVCsegmentControlSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="lyo-UP-WKJ"/>
                             </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Next menu" id="ldy-er-bw2">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="goToNextVC:" destination="BYZ-38-t0r" id="xQ8-qp-ghb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -74,6 +86,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

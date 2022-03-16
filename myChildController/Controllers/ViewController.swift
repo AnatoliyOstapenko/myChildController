@@ -21,13 +21,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // it's mandatory to animate pop-up view
+        popUp()
+    }
+    
+    func popUp() {
+        // asyncAfter is mandatory to animate pop-up view
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
             let popModel = PopUpModel()
             self.view.addSubview(popModel)
         }
-    
     }
+    
 
     @IBAction func chooseVCsegmentControlSelected(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
@@ -38,6 +42,18 @@ class ViewController: UIViewController {
         default:
             break
         }
+        
+    }
+    
+    @IBAction func showPopUpButtonPressed(_ sender: UIBarButtonItem) {
+        // asyncAfter is mandatory to animate pop-up view
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+            let popModel = PopUpModel()
+            self.view.addSubview(popModel)
+        }
+    }
+    
+    @IBAction func goToNextVC(_ sender: UIBarButtonItem) {
         
     }
     

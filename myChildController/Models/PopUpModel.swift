@@ -16,17 +16,17 @@ class PopUpModel: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 28, weight: .bold)
         label.textAlignment = .center
-        label.text = "PopUp title"
+        label.text = "Welcome to Ukraine"
         return label
     }()
     
     private let subTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 20, weight: .thin)
+        label.font = .systemFont(ofSize: 16, weight: .thin)
         label.textAlignment = .center
         label.numberOfLines = 3
-        label.text = "first row of text \n second row of text \n third row of text"
+        label.text = "Tap on the screen \n to pop up message will be hidden \n after that you can choose your motto"
         return label
     }()
     
@@ -59,8 +59,8 @@ class PopUpModel: UIView {
         
         popUpContainer.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         popUpContainer.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        popUpContainer.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7).isActive = true
-        popUpContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.5).isActive = true
+        popUpContainer.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8).isActive = true
+        popUpContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.25).isActive = true
         
         popUpContainer.addSubview(popUpStack) // add UIStackView to my container view
         popUpStack.leadingAnchor.constraint(equalTo: popUpContainer.leadingAnchor).isActive = true
