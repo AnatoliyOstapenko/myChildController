@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC9D75C427E11E20008554EC /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D75C327E11E20008554EC /* Animation.swift */; };
+		BC9D75C627E1E194008554EC /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D75C527E1E194008554EC /* TwitterViewController.swift */; };
 		BCB8341827DF86DC00D43F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8341727DF86DC00D43F49 /* AppDelegate.swift */; };
 		BCB8341A27DF86DC00D43F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8341927DF86DC00D43F49 /* SceneDelegate.swift */; };
 		BCB8341C27DF86DC00D43F49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8341B27DF86DC00D43F49 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		BC9D75C327E11E20008554EC /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		BC9D75C527E1E194008554EC /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		BCB8341427DF86DC00D43F49 /* myChildController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myChildController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB8341727DF86DC00D43F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB8341927DF86DC00D43F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				BCB8341B27DF86DC00D43F49 /* ViewController.swift */,
+				BC9D75C527E1E194008554EC /* TwitterViewController.swift */,
 				BCB8344727DF887500D43F49 /* SecondChildViewController.swift */,
 				BCB8344927DF8A7400D43F49 /* FirstChildViewController.swift */,
 			);
@@ -302,6 +305,7 @@
 			files = (
 				BCB8345527E0A0C500D43F49 /* PopUpModel.swift in Sources */,
 				BCB8344A27DF8A7400D43F49 /* FirstChildViewController.swift in Sources */,
+				BC9D75C627E1E194008554EC /* TwitterViewController.swift in Sources */,
 				BCB8341C27DF86DC00D43F49 /* ViewController.swift in Sources */,
 				BCB8344827DF887500D43F49 /* SecondChildViewController.swift in Sources */,
 				BCB8344E27DFE29B00D43F49 /* ChildVCModel.swift in Sources */,

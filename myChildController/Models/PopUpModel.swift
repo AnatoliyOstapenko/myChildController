@@ -53,7 +53,7 @@ class PopUpModel: UIView {
         // Activate tap gesture
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateOut)))
         
-        self.backgroundColor = .systemGray.withAlphaComponent(0.4) // set alpfa
+        self.backgroundColor = .systemBlue.withAlphaComponent(0.3) // set alpfa
         self.frame = UIScreen.main.bounds
         addSubview(popUpContainer) // always before constraints!
         
@@ -68,7 +68,7 @@ class PopUpModel: UIView {
         popUpStack.heightAnchor.constraint(equalTo: popUpContainer.heightAnchor, multiplier: 0.5).isActive = true
         popUpStack.centerYAnchor.constraint(equalTo: popUpContainer.centerYAnchor).isActive = true
         
-        //animateIn() // activate popUp in method
+        // activate popUp in method
         animation.animateIn(container: popUpContainer, view: self)
     }
     

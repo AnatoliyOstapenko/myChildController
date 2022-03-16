@@ -10,12 +10,15 @@ import UIKit
 class ViewController: UIViewController {
     
     var childVCModel = ChildVCModel()
+    var index = 0
+    //let popUpModel = PopUpModel()
     
     let secondChildVC = SecondChildViewController()
     let firstChildVC: FirstChildViewController = {
         let firstChildVC = FirstChildViewController()
         return firstChildVC
     }()
+    let twitterVC = TwitterViewController()
     
 
     override func viewDidLoad() {
@@ -30,6 +33,11 @@ class ViewController: UIViewController {
             let popModel = PopUpModel()
             self.view.addSubview(popModel)
         }
+    }
+    func goToTwitterVC() {
+        let vc = TwitterViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
 
@@ -46,15 +54,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showPopUpButtonPressed(_ sender: UIBarButtonItem) {
-        // asyncAfter is mandatory to animate pop-up view
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
-            let popModel = PopUpModel()
-            self.view.addSubview(popModel)
-        }
+        popUp()
+   
     }
     
     @IBAction func goToNextVC(_ sender: UIBarButtonItem) {
-        
+        goToTwitterVC()
     }
     
   
